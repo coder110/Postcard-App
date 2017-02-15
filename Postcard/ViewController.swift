@@ -28,15 +28,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(_ sender: UIButton) {
+        // Code will evaluate when we press the button
+        // Add a comment here
         messageLabel.isHidden = false
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.lightGray
         
-        //Set the input message box to empty, and bring down the keyboard
+        // Set the input message box to empty, and bring down the keyboard
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
         
-        //Show the 'To' and recipient labels and populate recipient
+        // Show the 'To' and recipient labels and populate recipient
         recipientLabel.isHidden = false
         toLabel.isHidden = false
         recipientLabel.text = enterNameTextField.text
